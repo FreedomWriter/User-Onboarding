@@ -153,7 +153,8 @@ export default withFormik({
   handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
     // if (values.email !== "waffle@syrup.com") {
     //   setErrors({ email: "That email is already taken" });
-    // } else
+    //   setSubmitting(false);
+    // }
     if (values.password !== values.verifyPassword) {
       setErrors({ verifyPassword: "Passwords do not match" });
       setSubmitting(false);
